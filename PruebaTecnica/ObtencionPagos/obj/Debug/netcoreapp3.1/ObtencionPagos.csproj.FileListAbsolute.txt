@@ -1,0 +1,12 @@
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.exe
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.deps.json
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.runtimeconfig.json
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.runtimeconfig.dev.json
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\bin\Debug\netcoreapp3.1\ObtencionPagos.pdb
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.AssemblyInfoInputs.cache
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.AssemblyInfo.cs
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.csproj.CoreCompileInputs.cache
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.pdb
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\ObtencionPagos\obj\Debug\netcoreapp3.1\ObtencionPagos.genruntimeconfig.cache
