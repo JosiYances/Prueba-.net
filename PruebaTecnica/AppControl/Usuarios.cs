@@ -129,41 +129,7 @@ namespace AppControl
         {
 
         }
-
-        private void IMPRIMIR_Click(object sender, EventArgs e)
-        {
-            string path = @"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\DatosEntrada\EXTRACTOS A RETENER.xlsx";
-            SLDocument sl = new SLDocument(path);
-
-            string[] Retener = new string[6];
-            
-
-
-            for (int x = 0; x < 6; x++)
-            {
-                Retener[x] = sl.GetCellValueAsString(x + 2, 1);
-                
-            }
-
-            //Verifica Cuentas  Imprimir
-            for (int x = 0; x < 20; x++)
-            {
-                for (int y = 0; y < 7; y++)
-                {
-                    if (Clientes[x, 0] == Retener[y])
-                    {
-                        MessageBox.Show("Cuenta "+Retener[y]+" Retenida");
-                    }
-
-                    Imprimir pruebaI = new Imprimir();
-                    pruebaI.Gestionar(Clientes[x, 0]);
-                }
-
-            }
-            
-            return;
-
-        }
+       
 
         private void ENVIAR_Click(object sender, EventArgs e)
         {
@@ -187,9 +153,15 @@ namespace AppControl
                 {
                     if (Clientes[x, 0] == UseMail[y])
                     {
+                        string[] DClientes = new string[10];
+
+                        for (int z = 0; z < 10; z++) 
+                        {
+                            DClientes[z] = Clientes[x, z];
+                        }
+
                         EnvioCorreo prueba1 = new EnvioCorreo();
-                        prueba1.Gestionar(Clientes[x, 0], Correo[y]);
-                    
+                        prueba1.Gestionar(DClientes, Correo[y]);                    
 
                     }
                 }
@@ -228,8 +200,15 @@ namespace AppControl
                             }
                             else if(z==6 & y==5)
                             {
+                                string[] DClientes = new string[10];
+                                for (int i = 0; i < 10; i++)
+                                {
+                                    DClientes[i] = Clientes[x, i];
+                                    
+                                }
                                 Imprimir pruebaI = new Imprimir();
-                                pruebaI.Gestionar(Clientes[x, 0]);
+                                pruebaI.Gestionar(DClientes);
+
                             }
                         }
 

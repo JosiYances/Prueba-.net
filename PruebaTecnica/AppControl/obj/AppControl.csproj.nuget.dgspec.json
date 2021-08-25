@@ -46,6 +46,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "BarcodeLib": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
             "PdfSharp": {
               "target": "Package",
               "version": "[1.50.5147, )"
@@ -53,6 +57,14 @@
             "SpreadsheetLight": {
               "target": "Package",
               "version": "[3.5.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.6, )"
+            },
+            "Zen.Barcode.Rendering.Framework": {
+              "target": "Package",
+              "version": "[3.1.10729.1, )"
             },
             "iTextSharp": {
               "target": "Package",

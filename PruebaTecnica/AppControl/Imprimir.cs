@@ -16,7 +16,7 @@ namespace AppControl
         string[,] iImp = new string[20, 15];
         string[] ClienteImp = new string[15];
 
-        public void Gestionar(string Use)
+        public void Gestionar(string[] Use)
         {
 
             using (StreamReader leer = new StreamReader(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\DatosEntrada\DatosPagoExtracto.txt"))
@@ -43,7 +43,7 @@ namespace AppControl
 
             for (int x = 0; x < 20; x++)
             {
-                if (iImp[x, 0] == Use)
+                if (iImp[x, 0] == Use[0])
                 {
                     for (int y = 0; y < 15; y++)
                     {
@@ -54,10 +54,15 @@ namespace AppControl
 
             Document doc = new Document(PageSize.LETTER);
             PdfWriter writer = PdfWriter.GetInstance(doc,
-                       new FileStream(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\IMPRIMIR\" + Use + ".PDF", FileMode.Create));
+                       new FileStream(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\IMPRIMIR\" + Use[0] + ".PDF", FileMode.Create));
             doc.Open();
 
             iTextSharp.text.Font _StandarFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+
+            doc.Add(new Paragraph("Contrato N°: " + Use[1] + "  |  Fecha de Factura: " + Use[2] + "  |  Fecha de Vencimiento: " + Use[3]));
+            doc.Add(new Paragraph("Valor Factura: " + Use[4] + "  |    Tipo de Razón Social: " + Use[5] + "  |     Nombre: " + Use[6]));
+            doc.Add(new Paragraph("NIT / C.C.: " + Use[7] + " | Dirección: " + Use[8] + " | Ciudad: " + Use[9]));
 
             doc.Add(new Paragraph("Factura cuenta " + ClienteImp[0]));
             doc.Add(Chunk.NEWLINE);
@@ -114,13 +119,18 @@ namespace AppControl
             doc.Close();
             writer.Close();
 
-            
+
             try
             {
-                //Process.Start(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\IMPRIMIR\" + Use + ".PDF");
-                MessageBox.Show("Cuenta " + Use + " impresa");
+                var proc = new Process();
+            proc.StartInfo = new ProcessStartInfo(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\IMPRIMIR\" + Use[0] + ".PDF")
+            {
+                UseShellExecute = true
+            };
 
-            }
+                MessageBox.Show("Cuenta " + Use[0] + " impresa");
+
+        }
             catch (Exception)
             {
                 MessageBox.Show("Error al imprimir");

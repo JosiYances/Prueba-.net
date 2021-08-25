@@ -16,7 +16,7 @@ namespace AppControl
         string[,] iPago = new string[20, 15];
         string[] ClienteImp = new string[15];
 
-        public void Gestionar(string Usua, string Mail)
+        public void Gestionar(string[] Usua, string Mail)
         {
 
             using (StreamReader leer = new StreamReader(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\DatosEntrada\DatosPagoExtracto.txt"))
@@ -43,7 +43,7 @@ namespace AppControl
 
             for (int x = 0; x < 20; x++)
             {
-                if (iPago[x, 0] == Usua)
+                if (iPago[x, 0] == Usua[0])
                 {
                     for (int y = 0; y < 15; y++)
                     {
@@ -54,10 +54,15 @@ namespace AppControl
 
             Document doc = new Document(PageSize.LETTER);
             PdfWriter writer = PdfWriter.GetInstance(doc,
-                       new FileStream(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\"+Usua+".PDF", FileMode.Create));
+                       new FileStream(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\"+Usua[0]+".PDF", FileMode.Create));
             doc.Open();
 
             iTextSharp.text.Font _StandarFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+            doc.Add(new Paragraph("Contrato N°: " + Usua[1]+"  |  Fecha de Factura: "+Usua[2]+ "  |  Fecha de Vencimiento: " + Usua[3]));           
+            doc.Add(new Paragraph("Valor Factura: " + Usua[4] + "  |    Tipo de Razón Social: " + Usua[5] + "  |     Nombre: " + Usua[6]));            
+            doc.Add(new Paragraph("NIT / C.C.: " + Usua[7]+ " | Dirección: " + Usua[8]+ " | Ciudad: " + Usua[9]));
+            
 
             doc.Add(new Paragraph("Factura cuenta " + ClienteImp[0]));
             doc.Add(Chunk.NEWLINE);
@@ -109,21 +114,25 @@ namespace AppControl
             doc.Add(Chunk.NEWLINE);
             doc.Add(Chunk.NEWLINE);
 
+            CodigoGener CodigoBarra = new CodigoGener();
+            CodigoBarra.Generator(ClienteImp[14]);
+
             doc.Add(new Paragraph(ClienteImp[14]));
 
+            
             doc.Close();
             writer.Close();
 
             System.Net.Mail.MailMessage CE = new System.Net.Mail.MailMessage();
 
             CE.To.Add(Mail);
-            CE.Subject = "Factura Cuenta " + Usua;
+            CE.Subject = "Factura Cuenta " + Usua[0];
             CE.SubjectEncoding = System.Text.Encoding.UTF8;
             CE.Body = "Adjunto encontrará su factura del presente mes.";
             CE.BodyEncoding = System.Text.Encoding.UTF8;
             CE.From = new System.Net.Mail.MailAddress("pruebacarvajal.net1@gmail.com");
             
-            CE.Attachments.Add(new System.Net.Mail.Attachment(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\"+Usua+".PDF"));
+            CE.Attachments.Add(new System.Net.Mail.Attachment(@"C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\FACTURAS PDF\"+Usua[0]+".PDF"));
 
             System.Net.Mail.SmtpClient clientC = new System.Net.Mail.SmtpClient();
             clientC.Port = 587;
@@ -134,7 +143,7 @@ namespace AppControl
             try
             {
                 clientC.Send(CE);
-               // MessageBox.Show("Cuenta " + Usua + " enviada a " + Mail);
+                MessageBox.Show("Cuenta " + Usua + " enviada a " + Mail);
 
             }
             catch (Exception)

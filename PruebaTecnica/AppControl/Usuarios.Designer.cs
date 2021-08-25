@@ -32,7 +32,6 @@ namespace AppControl
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usarios));
             this.label1 = new System.Windows.Forms.Label();
             this.ENVIAR = new System.Windows.Forms.Button();
-            this.IMPRIMIR = new System.Windows.Forms.Button();
             this.Cuenta = new System.Windows.Forms.ListBox();
             this.Contrato = new System.Windows.Forms.ListBox();
             this.FechaF = new System.Windows.Forms.ListBox();
@@ -53,6 +52,7 @@ namespace AppControl
             this.TID = new System.Windows.Forms.TextBox();
             this.TDireccion = new System.Windows.Forms.TextBox();
             this.TCiudad = new System.Windows.Forms.TextBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.SuspendLayout();
             // 
             // label1
@@ -71,29 +71,14 @@ namespace AppControl
             this.ENVIAR.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ENVIAR.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ENVIAR.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ENVIAR.Location = new System.Drawing.Point(196, 594);
+            this.ENVIAR.Location = new System.Drawing.Point(487, 592);
             this.ENVIAR.Name = "ENVIAR";
             this.ENVIAR.Size = new System.Drawing.Size(268, 51);
             this.ENVIAR.TabIndex = 1;
-            this.ENVIAR.Text = "ENVIAR FACTURAS";
+            this.ENVIAR.Text = "GESTIONAR FACTURAS";
             this.ENVIAR.UseMnemonic = false;
             this.ENVIAR.UseVisualStyleBackColor = false;
             this.ENVIAR.Click += new System.EventHandler(this.ENVIAR_Click);
-            // 
-            // IMPRIMIR
-            // 
-            this.IMPRIMIR.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.IMPRIMIR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.IMPRIMIR.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IMPRIMIR.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.IMPRIMIR.Location = new System.Drawing.Point(766, 591);
-            this.IMPRIMIR.Name = "IMPRIMIR";
-            this.IMPRIMIR.Size = new System.Drawing.Size(268, 51);
-            this.IMPRIMIR.TabIndex = 3;
-            this.IMPRIMIR.Text = "IMPRIMIR FACTURAS";
-            this.IMPRIMIR.UseMnemonic = false;
-            this.IMPRIMIR.UseVisualStyleBackColor = false;
-            this.IMPRIMIR.Click += new System.EventHandler(this.IMPRIMIR_Click);
             // 
             // Cuenta
             // 
@@ -281,7 +266,6 @@ namespace AppControl
             this.Controls.Add(this.FechaF);
             this.Controls.Add(this.Contrato);
             this.Controls.Add(this.Cuenta);
-            this.Controls.Add(this.IMPRIMIR);
             this.Controls.Add(this.ENVIAR);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.Control;
@@ -301,7 +285,6 @@ namespace AppControl
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ENVIAR;
-        private System.Windows.Forms.Button IMPRIMIR;
         private System.Windows.Forms.ListBox Cuenta;
         private System.Windows.Forms.ListBox Contrato;
         private System.Windows.Forms.ListBox FechaF;
@@ -322,5 +305,6 @@ namespace AppControl
         private System.Windows.Forms.TextBox TID;
         private System.Windows.Forms.TextBox TDireccion;
         private System.Windows.Forms.TextBox TCiudad;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

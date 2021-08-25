@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "so15mzu4oRKLY1wKpiudZ8GCNW8uTIvzwHCgUrngnD1wP0RtXTeRUE1IgFT85Pj0LB6lYrGeJraZesz3CiIUOA==",
+  "dgSpecHash": "K2KYa4O6VEILQfOQQeRTsKS1keDzo3lHjUV9U6IucD5zXUeapotbub6T2rMC3qlw44v7kELBogzbJgYvYx87bA==",
   "success": true,
   "projectFilePath": "C:\\Users\\JOSIMAR HERNANDEZ\\Desktop\\PRUEBA CARVAJAL\\Prueba\\PruebaTecnica\\AppControl\\AppControl.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\barcodelib\\2.4.0\\barcodelib.2.4.0.nupkg.sha512",
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\bouncycastle\\1.8.6.1\\bouncycastle.1.8.6.1.nupkg.sha512",
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\documentformat.openxml\\2.11.3\\documentformat.openxml.2.11.3.nupkg.sha512",
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\itextsharp\\5.5.13.2\\itextsharp.5.5.13.2.nupkg.sha512",
@@ -11,8 +12,13 @@
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\pdfsharp\\1.50.5147\\pdfsharp.1.50.5147.nupkg.sha512",
     "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\spreadsheetlight\\3.5.0\\spreadsheetlight.3.5.0.nupkg.sha512",
-    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
-    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\zen.barcode.rendering.framework\\3.1.10729.1\\zen.barcode.rendering.framework.3.1.10729.1.nupkg.sha512",
+    "C:\\Users\\JOSIMAR HERNANDEZ\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [
     {
@@ -41,6 +47,16 @@
       "warningLevel": 1,
       "message": "El paquete \"PDFsharp 1.50.5147\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "PDFsharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Zen.Barcode.Rendering.Framework 3.1.10729.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Zen.Barcode.Rendering.Framework",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

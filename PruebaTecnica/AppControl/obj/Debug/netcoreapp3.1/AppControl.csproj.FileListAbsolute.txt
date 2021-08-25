@@ -29,3 +29,9 @@ C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppContr
 C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\PdfSharp.dll
 C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\de\PdfSharp.Charting.resources.dll
 C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\de\PdfSharp.resources.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\BarcodeStandard.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\Zen.Barcode.Core.dll
+C:\Users\JOSIMAR HERNANDEZ\Desktop\PRUEBA CARVAJAL\Prueba\PruebaTecnica\AppControl\bin\Debug\netcoreapp3.1\zxing.dll
